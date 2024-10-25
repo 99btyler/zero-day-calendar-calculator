@@ -28,7 +28,7 @@ def main():
             zeroday_dates.append(f"Month{i+1}_{ii+1}")
     zeroday_dates.append("ZERO DAY")
     if months["February"] == 29:
-        zeroday_dates.insert(59, "LEAPYEAR DAY")
+        zeroday_dates.insert(dates.index("February_29"), "LEAPYEAR DAY")
 
     # output
     print("Month_Day ---> ???_???")
